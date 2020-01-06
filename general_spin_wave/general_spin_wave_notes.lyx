@@ -1288,7 +1288,57 @@ noprefix "false"
 
  is enough to capture the low-energy physics above a symmetry-broken ground
  state.
+ However, there exists certain cases for which the non-interacting theory
+ is not a good approximation.
+ For instance, due to its noncolinear ground state spin structure, interaction
+ between spin wave excitations in the triangular lattice Heisenberg antiferromag
+net (TLHA) produces considerable corrections on results predicted by the
+ non-interacting theory.
  
+\begin_inset CommandInset citation
+LatexCommand citet
+key "TLHCandZ2009"
+literal "false"
+
+\end_inset
+
+ The framework of the SU(3) generalized non-linear spin wave theory (GNLSWT)
+ is similar to its SU(2) counterpart established in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "TLHCandZ2009"
+literal "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "REVMOD"
+literal "false"
+
+\end_inset
+
+.
+ As a starting point, we will first review the theoretical technical details
+ and then apply them to the Fe
+\begin_inset Formula $\text{I}_{2}$
+\end_inset
+
+ compound.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "doc"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
