@@ -1,0 +1,1295 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{mathptmx,newtxtext,newtxmath,xspace}
+\usepackage{amsbsy,bm,bbold}
+\usepackage{graphicx,color,xcolor,epsfig,rotate}
+\usepackage{fancyhdr}
+\usepackage{gensymb}
+\usepackage[colorlinks=true, 
+            linkcolor=blue, 
+            urlcolor=blue,
+            citecolor=blue]{hyperref}
+\usepackage{soul}
+\usepackage{physics}
+\pagestyle{fancyplain}
+\lhead{\large } 
+\cfoot{\sc\thepage} 
+\lfoot{} 
+\rfoot{}
+\allowdisplaybreaks[2]
+
+\newcommand{\iu}{{i\mkern1mu}}
+\newcommand{\one}{\mathbb{1}}
+%\renewcommand{\arraystretch}{1.5}
+\end_preamble
+\options aps,pra,amsmath,onecolumn,preprintnumber,superscriptaddress,showpacs,notitlepage
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+General spin wave theory
+\end_layout
+
+\begin_layout Section
+Formalism
+\end_layout
+
+\begin_layout Standard
+Clearly the traditional SU(2) SWT must be generalized to its SU(3) counterpart.
+ The recipes of the generalization process are summarized in this section.
+ We first show that the 
+\begin_inset Formula $S=1$
+\end_inset
+
+ mean-field state can be written as a product state of the SU(3) coherent
+ states.
+ To describe the spin fluctuations above the mean-field state, we introduce
+ the Schwinger boson representation.
+ The Schwinger boson which creates the mean-field state is condensed, leading
+ to generalized Holstein-Primakoff transformation.
+ 
+\end_layout
+
+\begin_layout Subsection
+The mean-field state of long-range ordered 
+\begin_inset Formula $S=1$
+\end_inset
+
+ systems
+\end_layout
+
+\begin_layout Standard
+For a long-range ordered 
+\begin_inset Formula $S=1$
+\end_inset
+
+ system, the mean-field state can be factorized into a product state of
+ different sublattices, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+|\Psi\rangle=\prod_{j=1}^{N_{\text{sub}}}\prod_{i\in\Lambda_{j}}|\psi_{j}\rangle_{i,S=1},\label{eq:mfs-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $i$
+\end_inset
+
+ is the site index, 
+\begin_inset Formula $\Lambda_{j}$
+\end_inset
+
+ is the set of 
+\begin_inset Formula $j$
+\end_inset
+
+-th sublattice, and 
+\begin_inset Formula $\ket{\psi_{j}}_{i}$
+\end_inset
+
+ is the local SU(3) coherent state given in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:lmf"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ of the 
+\begin_inset Formula $i$
+\end_inset
+
+-th site belonging to the 
+\begin_inset Formula $j$
+\end_inset
+
+-th sublattice.
+ The mean-field energy can be calculated as, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{MF}=\langle\Psi|\mathcal{H}|\Psi\rangle.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The mean-field state is determined by applying the variational principle:
+ minimizing the mean-field energy with respect to 
+\begin_inset Formula $4N_{\text{sub}}$
+\end_inset
+
+ real parameters, where 
+\begin_inset Formula $N_{\text{sub}}$
+\end_inset
+
+ is the number of sublattices.
+ Because the local state of a particular sublattice is described by four
+ real parameters: 
+\begin_inset Formula $\alpha_{1},\alpha_{2},\theta$
+\end_inset
+
+, and 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+The SU(3) Schwinger boson representation
+\end_layout
+
+\begin_layout Standard
+To quantitatively describe spin fluctuations of 
+\begin_inset Formula $S=1$
+\end_inset
+
+ systems, we introduce the Schwinger boson representation of SU(3) generators.
+ The eight generators can be written in bilinear forms of the Schwinger
+ boson operators, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+O_{i}^{(\alpha)}=\sum_{mm'}O_{mm'}^{(\alpha)}b_{im}^{\dagger}b_{im'},\ \alpha=1,2,...,8.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which satisfy the canonical commutation relations, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\big[b_{im,}b_{im'}^{\dagger}\big]=\delta_{mm'}\ \big[b_{im},b_{im'}\big]=\big[b_{im}^{\dagger},b_{im'}^{\dagger}\big]=0\ \ m,m'=-1,0,1.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The three basis states of 
+\begin_inset Formula $S=1$
+\end_inset
+
+ can be obtained by creating the corresponding Schwinger boson from the
+ vacuum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ket{1}=b_{+1}^{\dagger}\ket{vac},\ \ket{0}=b_{0}^{\dagger}\ket{vac},\ \ket{-1}=b_{-1}^{\dagger}\ket{vac}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The basis states form a physical subspace of the Fock space of the Schwinger
+ bosons.
+ To project the full Fock space onto the physical subspace, we consider
+ a local constraint 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "BSU(3)"
+literal "false"
+
+\end_inset
+
+ on the total boson number, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sum_{m=\pm1,0}b_{im}^{\dagger}b_{im}=N\mathcal{S}=1.\label{eq:physcons}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this way, the spin fluctuations are represented by the boson number fluctuati
+ons.
+ 
+\end_layout
+
+\begin_layout Subsection
+Generalized Holstein-Primakoff transformation
+\end_layout
+
+\begin_layout Standard
+Assume the local mean-field state is determined by using the method described
+ in section 4.1, it can be obtained from the vacuum by creating a boson in
+ the local reference frame,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ket{\psi_{j}}=\tilde{b}_{j,+1}^{\dagger}\ket{vac}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the site index and the sublattice index are combined as one index
+ 
+\begin_inset Formula $j$
+\end_inset
+
+ for simplicity.
+ This local state is related to the state 
+\begin_inset Formula $\ket{1}$
+\end_inset
+
+ in the global reference frame through a SU(3) transformation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "su3_coherent"
+literal "false"
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\ket{\psi_{j}}=\mathcal{U}\ket{1},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{U}=\begin{pmatrix}\sin\theta\cos\phi e^{i\alpha_{1}} & \cos\theta\cos\phi e^{i\alpha_{1}} & -\sin\phi e^{-i\alpha_{2}}\\
+\sin\theta\sin\phi e^{i\alpha_{2}} & \cos\theta\sin\phi e^{i\alpha_{2}} & \cos\phi e^{-i\alpha_{1}}\\
+\cos\theta & -\sin\theta & 0
+\end{pmatrix}.\label{eq:su3trans}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Schwinger bosons operators transform in the same way,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tilde{\bm{b}}_{i}^{\dagger}=\bm{b}_{i}^{\dagger}\mathcal{U}_{i}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\bm{b}_{i}^{\dagger}=(b_{i,+1},b_{i,-1},b_{i,0})^{T}$
+\end_inset
+
+.
+ From now on, we use 
+\begin_inset Formula $O_{i}^{(\alpha)}$
+\end_inset
+
+ to denote the SU(3) generators in the global reference frame and 
+\begin_inset Formula $\mathcal{O}_{i}^{(\alpha)}$
+\end_inset
+
+ to denote the SU(3) generators in the local reference frame.
+ Since the generators are bilinear in the Schwinger boson operators, the
+ global to local transformation for the generators takes the form,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{O}_{i}^{(\alpha)}=\mathcal{U}_{i}O_{i}^{(\alpha)}\mathcal{U}_{i}^{\dagger}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider small fluctuations near the mean-field state 
+\begin_inset Formula $\ket{\psi_{j}}$
+\end_inset
+
+, which is macroscopically occupied by the bosons 
+\begin_inset Formula $\tilde{b}_{j,+1}^{\dagger}$
+\end_inset
+
+ at 
+\begin_inset Formula $T=0$
+\end_inset
+
+, 
+\emph on
+i.e.
+
+\emph default
+ the 
+\begin_inset Formula $\tilde{b}_{j,+1}^{\dagger}$
+\end_inset
+
+ boson is condensed.
+ Using the physical constraint Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:physcons"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tilde{b}_{j,+1}^{\dagger}=\tilde{b}_{j,+1}=\sqrt{N\mathcal{S}-\sum_{m\neq+1}\tilde{b}_{j,m}^{\dagger}\tilde{b}_{j,m}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By treating 
+\begin_inset Formula $N\mathcal{S}$
+\end_inset
+
+ as a large parameter, the SU(3) generators are expanded as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{O}_{i}^{(\alpha)} & =f_{\alpha}^{(0)}+\sum_{m=-1,0}(f_{\alpha,m}^{(1)}b_{i,m}+h.c.)+\sum_{m=-1,0}\sum_{m'=-1,0}(f_{\alpha,mm'}^{(2)}b_{im}^{\dagger}b_{im'}+h.c.)\\
+ & +\sum_{m=-1,0}\sum_{m'=-1,0}(f_{\alpha,mm'}^{(3)}b_{im}^{\dagger}b_{im}b_{im'}+h.c.)+\mathcal{O}\bigg[\bigg(\frac{1}{N\mathcal{S}}\bigg)^{3/2}\bigg].\label{eq:ghpt}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is a generalization of the conventional HPT given in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:HPT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We call it large-
+\begin_inset Formula $N\mathcal{S}$
+\end_inset
+
+ generalized HPT.
+ 
+\end_layout
+
+\begin_layout Subsection
+Technical details of the generalized linear spin wave theory
+\end_layout
+
+\begin_layout Subsubsection
+The Hamiltonian in the local reference frame
+\end_layout
+
+\begin_layout Standard
+A general 
+\begin_inset Formula $S=1$
+\end_inset
+
+ spin Hamiltonian can be written symbolically as, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}=\sum_{\langle i,j\rangle}\bm{O}_{i}^{T}H_{ij}\bm{O}_{j}+\sum_{i}\bm{O}_{i}^{T}\cdot\bm{h}_{i}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $H_{ij}$
+\end_inset
+
+ is a 
+\begin_inset Formula $8\times8$
+\end_inset
+
+ matrix labeling the exchange interactions and 
+\begin_inset Formula $\bm{h}_{i}$
+\end_inset
+
+ is a 
+\begin_inset Formula $8\times1$
+\end_inset
+
+ vector labeling the on-site interactions.
+ For the the spin model of Fe
+\begin_inset Formula $\text{I}_{2}$
+\end_inset
+
+ Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:model"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{ij}=\begin{pmatrix}J_{ij}+2\Re(\gamma_{ij})J_{\pm\pm} & -2\Im(\gamma_{ij})J_{\pm\pm} & -\Im(\gamma_{ij})J_{z\pm} & 0_{1\times5}\\
+-2\Im(\gamma_{ij})J_{\pm\pm} & J_{ij}-2\Re(\gamma_{ij})J_{\pm\pm} & \Re(\gamma_{ij})J_{z\pm} & 0_{1\times5}\\
+-\Im(\gamma_{ij})J_{z\pm} & \Re(\gamma_{ij})J_{z\pm} & J_{ij}\Delta_{ij} & 0_{1\times5}\\
+0_{5\times1} & 0_{5\times1} & 0_{5\times1} & 0_{5\times5}
+\end{pmatrix},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bm{h}_{i}=\begin{pmatrix}0_{2\times1}\\
+-h\\
+0_{4\times1}\\
+-\frac{1}{\sqrt{3}}D
+\end{pmatrix}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where a constant energy term is dropped.
+ In the local reference frame, the spin Hamiltonian takes the form, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{H} & =\sum_{\langle i,j\rangle}\mathcal{\bm{O}}_{i}^{T}R_{\bm{O}\rightarrow\mathcal{\bm{O}},i}H_{ij}R_{\bm{O}\rightarrow\mathcal{\bm{O}},j}^{T}\bm{\mathcal{O}}_{j}+\sum_{i}\mathcal{\bm{O}}_{i}^{T}R_{\bm{O}\rightarrow\mathcal{\bm{O}},i}\cdot\bm{h}_{i}\\
+ & =\sum_{\langle i,j\rangle}\mathcal{\bm{O}}_{i}^{T}\tilde{H}_{ij}\bm{\mathcal{O}}_{j}+\sum_{i}\mathcal{\bm{O}}_{i}^{T}\cdot\tilde{\bm{h}}_{i},\label{eq:generalham}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tilde{H}_{ij}=R_{\bm{O}\rightarrow\mathcal{\bm{O}},i}H_{ij}R_{\bm{O}\rightarrow\mathcal{\bm{O}},j}^{T},\ \ \ \tilde{\bm{h}}_{i}=R_{\bm{O}\rightarrow\mathcal{\bm{O}},i}\cdot\bm{h}_{i},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bm{\mathcal{O}}=R_{\bm{O}\rightarrow\mathcal{\bm{O}}}\bm{O}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The form of 
+\begin_inset Formula $R_{\bm{O}\rightarrow\mathcal{\bm{O}}}$
+\end_inset
+
+ is given in Appendix B.
+\end_layout
+
+\begin_layout Subsubsection
+The quadratic Hamiltonian
+\end_layout
+
+\begin_layout Standard
+Truncating the Hamiltonian at the quadratic order in boson operators is
+ equivalent to a non-interacting boson theory, which is also known as the
+ linear spin wave theory.
+ To study the collective behaviors, consider the following Fourier transformatio
+n on the boson operators, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b_{im}=\frac{1}{\sqrt{N_{u}}}\sum_{\bm{k}}e^{i\bm{k}\cdot\bm{r}_{\Theta_{i}}}b_{\bm{k},(\Theta_{i},m)}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Theta_{i}$
+\end_inset
+
+ labels the sublattice index of the site 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{u}$
+\end_inset
+
+ is the number of unit cells in the system.
+ By using the GHPT Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ghpt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and the form of the Hamiltonian in the local reference frame Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:generalham"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the quadratic Hamiltonian after the Fourier transformation takes the form,
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+tiny
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathcal{H}^{(2)}&=
+\backslash
+frac{1}{2}
+\backslash
+sum_{
+\backslash
+langle i,j
+\backslash
+rangle
+\backslash
+in S_{
+\backslash
+text{bonds}}}
+\backslash
+sum_{
+\backslash
+bm{k}}
+\backslash
+sum_{m,m'=-1,0}
+\backslash
+begin{pmatrix}b_{
+\backslash
+bm{k},(
+\backslash
+Theta_{i},m)}^{
+\backslash
+dagger}
+\backslash
+
+\backslash
+b_{
+\backslash
+bm{k},(
+\backslash
+Theta_{j},m)}^{
+\backslash
+dagger}
+\backslash
+
+\backslash
+b_{-
+\backslash
+bm{k},(
+\backslash
+Theta_{i},m)}
+\backslash
+
+\backslash
+b_{-
+\backslash
+bm{k},(
+\backslash
+Theta_{j},m)}
+\backslash
+end{pmatrix}^{T}
+\backslash
+begin{pmatrix}2
+\backslash
+mathcal{J}
+\backslash
+big(f_{mm'}^{(2)},f^{(0)}
+\backslash
+big) & 
+\backslash
+mathcal{J}
+\backslash
+big(
+\backslash
+big[f_{m}^{(1)}
+\backslash
+big]^{*},f_{m'}^{(1)}
+\backslash
+big)e^{i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}} & 0 & 
+\backslash
+mathcal{J}
+\backslash
+big(
+\backslash
+big[f_{m}^{(1)}
+\backslash
+big]^{*},
+\backslash
+big[f_{m'}^{(1)}
+\backslash
+big]^{*}
+\backslash
+big)e^{i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}}
+\backslash
+
+\backslash
+
+\backslash
+mathcal{J}
+\backslash
+big(f_{m'}^{(1)},
+\backslash
+big[f_{m}^{(1)}
+\backslash
+big]^{*}
+\backslash
+big)e^{-i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}} & 2
+\backslash
+mathcal{J}
+\backslash
+big(f^{(0)},f_{mm'}^{(2)}
+\backslash
+big) & 
+\backslash
+mathcal{J}
+\backslash
+big(
+\backslash
+big[f_{m'}^{(1)}
+\backslash
+big]^{*},
+\backslash
+big[f_{m}^{(1)}
+\backslash
+big]^{*}
+\backslash
+big)e^{-i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}} & 0
+\backslash
+
+\backslash
+0 & 
+\backslash
+mathcal{J}
+\backslash
+big(f_{m}^{(1)},f_{m'}^{(1)}
+\backslash
+big)e^{i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}} & 2
+\backslash
+mathcal{J}
+\backslash
+big(
+\backslash
+big[f_{mm'}^{(2)}
+\backslash
+big]^{*},
+\backslash
+big[f^{(0)}
+\backslash
+big]^{*}
+\backslash
+big) & 
+\backslash
+mathcal{J}
+\backslash
+big(f_{m}^{(1)},
+\backslash
+big[f_{m'}^{(1)}
+\backslash
+big]^{*}
+\backslash
+big)e^{i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}}
+\backslash
+
+\backslash
+
+\backslash
+mathcal{J}
+\backslash
+big(f_{m'}^{(1)},f_{m}^{(1)}
+\backslash
+big)e^{-i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}} & 0 & 
+\backslash
+mathcal{J}
+\backslash
+big(
+\backslash
+big[f_{m'}^{(1)}
+\backslash
+big]^{*},f_{m}^{(1)}
+\backslash
+big)e^{-i
+\backslash
+bm{k}
+\backslash
+cdot
+\backslash
+bm{
+\backslash
+delta}_{ij}} & 2
+\backslash
+mathcal{J}
+\backslash
+big(
+\backslash
+big[f^{(0)}
+\backslash
+big]^{*},
+\backslash
+big[f_{mm'}^{(2)}
+\backslash
+big]^{*}
+\backslash
+big)
+\backslash
+end{pmatrix}
+\backslash
+begin{pmatrix}b_{
+\backslash
+bm{k},(
+\backslash
+Theta_{i},m')}
+\backslash
+
+\backslash
+b_{
+\backslash
+bm{k},(
+\backslash
+Theta_{j},m')}
+\backslash
+
+\backslash
+b_{-
+\backslash
+bm{k},(
+\backslash
+Theta_{i},m')}^{
+\backslash
+dagger}
+\backslash
+
+\backslash
+b_{-
+\backslash
+bm{k},(
+\backslash
+Theta_{j},m')}^{
+\backslash
+dagger}
+\backslash
+end{pmatrix}
+\backslash
+
+\backslash
+&+
+\backslash
+frac{1}{2}
+\backslash
+sum_{i
+\backslash
+in S_{
+\backslash
+text{sites}}}
+\backslash
+sum_{
+\backslash
+alpha}
+\backslash
+sum_{m,m'=-1,0}2(
+\backslash
+tilde{
+\backslash
+bm{h}}_{i})_{
+\backslash
+alpha}
+\backslash
+big(f_{
+\backslash
+alpha,mm'}^{(2)}b_{
+\backslash
+bm{k}(
+\backslash
+Theta_{i},m)}^{
+\backslash
+dagger}b_{
+\backslash
+bm{k},(
+\backslash
+Theta_{i},m')}+
+\backslash
+big[f_{
+\backslash
+alpha,mm'}^{(2)}
+\backslash
+big]^{*}b_{-
+\backslash
+bm{k},(
+\backslash
+Theta_{i},m)}b_{-
+\backslash
+bm{k},(
+\backslash
+Theta_{i},m')}^{
+\backslash
+dagger}
+\backslash
+big)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\xi^{(2)}=-\sum_{mm'=-1,0}\delta_{m,m'}\bigg[\mathcal{J}\big(\big[f_{mm'}^{(2)}\big]^{*},\big[f^{(0)}\big]^{*}\big)+\mathcal{J}\big(\big[f^{(0)}\big]^{*},\big[f_{mm'}^{(2)}\big]^{*}\big)\bigg],
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{J}(f_{a},f_{b}) & =\big(f_{a}\big)^{T}\tilde{H}_{ij}f_{b}\\
+ & =\sum_{\alpha\beta}\big(f_{a}\big)_{\alpha}\big(\tilde{H}_{ij}\big)_{\alpha\beta}\big(f_{b}\big)_{\beta}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The summation in the Hamiltonian goes over translationally invariant bonds
+ and sites for the exchange and on-site terms, respectively.
+ The quadratic Hamiltonian can be diagonalized by the Bogoliubov transformation,
+ which is equivalent to an eigenvalue problem, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A\mathcal{H}^{(2)}(\bm{q})\mathcal{U}_{\mu}(\bm{q})=\omega_{\mu}(\bm{q})\mathcal{U}_{\mu}(\bm{q})\ \mu=1,2,...4*N_{\text{sub}},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=\begin{pmatrix}\mathbf{I}_{2*N_{\text{sub}}}\\
+ & -\mathbf{I}_{2*N_{\text{sub}}}
+\end{pmatrix}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are 
+\begin_inset Formula $2*N_{\text{sub}}$
+\end_inset
+
+ 
+\emph on
+pairs
+\emph default
+ of positive/negative eigenvalues, where two times the first 
+\begin_inset Formula $2*N_{\text{sub}}$
+\end_inset
+
+ positive eigenvalues correspond to the norm modes of the problem, also
+ known as the magnon dispersion relations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\mu}(\bm{q})=2\omega_{\mu}(\bm{q}),\ \ \ \omega_{\mu}(\bm{q})\geq0.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Generalized non-linear spin wave theory
+\end_layout
+
+\begin_layout Standard
+In generalized spin wave theory, the spin Hamiltonian is represented by
+ a boson Hamiltonian, which can be expanded as, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}=\sum_{n=0}^{\infty}\mathcal{H}^{(n)},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\mathcal{H}^{(n)}$
+\end_inset
+
+ is the boson Hamiltonian with 
+\begin_inset Formula $n$
+\end_inset
+
+ boson operators.
+ This expansion is controlled by the local boson number 
+\begin_inset Formula $N\mathcal{S}$
+\end_inset
+
+, which is assumed to be a large parameter.
+ Referring to the expression of generalized HPT Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ghpt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we find that 
+\begin_inset Formula $\mathcal{H}^{(n)}$
+\end_inset
+
+ is of the order 
+\begin_inset Formula $(2-n/2)$
+\end_inset
+
+ in 
+\begin_inset Formula $N\mathcal{S}$
+\end_inset
+
+.
+ In most cases, the non-interacting boson theory (GLSWT) with 
+\begin_inset Formula $n=2$
+\end_inset
+
+ is enough to capture the low-energy physics above a symmetry-broken ground
+ state.
+ 
+\end_layout
+
+\end_body
+\end_document
