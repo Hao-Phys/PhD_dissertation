@@ -2060,7 +2060,7 @@ In summary, the full cubic Hamiltonian can be symbolically written as
 \begin{align}
 \mathcal{H}^{(3)} & =\sum_{\langle i,j\rangle\in S_{\text{bonds}}}\mathcal{H}_{ij}^{(3)}+\sum_{i\in S_{\text{sites}}}\mathcal{H}_{i}^{(3)}\\
  & =\frac{1}{\sqrt{N_{u}}}\sum_{\{\bm{q}_{i}\}}\sum_{\{\Upsilon_{i}\}}\delta(\bm{q}_{1}+\bm{q}_{2}+\bm{q}_{3})\bigg\{\frac{1}{2!}V_{s}(\{\Upsilon_{i}\},\{\bm{q}_{i}\})\beta_{\Upsilon_{1},\bm{q}_{1}}\beta_{\Upsilon_{2},\bm{q}_{2}}\beta_{\Upsilon_{3},\bm{q}_{3}}+h.c.\\
- & +\frac{1}{3!}V_{d}(\{\Upsilon_{i}\},\{\bm{q}_{i}\})\beta_{\Upsilon_{1},\bar{\bm{q}}_{1}}^{\dagger}\beta_{\Upsilon_{2},\bar{\bm{q}}_{2}}^{\dagger}\beta_{\Upsilon_{3},\bm{q}_{3}}+h.c.\bigg\}
+ & +\frac{1}{3!}V_{d}(\{\Upsilon_{i}\},\{\bm{q}_{i}\})\beta_{\Upsilon_{1},\bar{\bm{q}}_{1}}^{\dagger}\beta_{\Upsilon_{2},\bar{\bm{q}}_{2}}^{\dagger}\beta_{\Upsilon_{3},\bm{q}_{3}}+h.c.\bigg\}.
 \end{align}
 
 \end_inset
@@ -2078,6 +2078,33 @@ The cubic vertex functions
 \end_inset
 
  are ready for diagrammatic calculations.
+\end_layout
+
+\begin_layout Subsection
+Quartic vertex rules
+\end_layout
+
+\begin_layout Subsubsection
+Quartic Hamiltonian in real space
+\end_layout
+
+\begin_layout Standard
+The quartic Hamiltonian on a particular bond can be written as, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{H}_{ij}^{(4)} & =\sum_{\alpha,\beta}(\tilde{H}_{ij})_{\alpha\beta}\bigg[\sum_{m,n,n'=-1,0}\big\{(f_{\alpha,m}^{(1)}f_{\beta,nn'}^{(3)}b_{im}b_{jn}^{\dagger}b_{jn}b_{jn'}+h.c.)\\
+ & +(f_{\alpha,m}^{(1)}\big[f_{\beta,nn'}^{(3)}\big]^{*}b_{im}b_{jn'}^{\dagger}b_{jn}^{\dagger}b_{jn}+h.c.)\\
+ & +(f_{\alpha,nn'}^{(3)}f_{\beta,m}^{(1)}b_{in}^{\dagger}b_{in}b_{in'}b_{jm}+h.c.)\\
+ & +(f_{\alpha,nn'}^{(3)}\big[f_{\beta,m}^{(1)}\big]^{*}b_{in}^{\dagger}b_{in}b_{in'}b_{jm}^{\dagger}+h.c.)\big\}\\
+ & +
+\end{align}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2183,7 +2210,7 @@ source
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Sigma_{s}^{\Upsilon}(i\omega,\bm{q})=\frac{1}{2\beta N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\sum_{\omega_{n}}\frac{1}{i\omega_{n}+\omega_{\bm{k},\Upsilon_{1}}}\frac{1}{-i(\omega+\omega_{n})+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2},
+\Sigma_{s}^{\Upsilon}(i\omega,\bm{q})=\frac{1}{2\beta N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\sum_{\omega_{n}}\frac{1}{i\omega_{n}-\omega_{\bm{k},\Upsilon_{1}}}\frac{1}{-i(\omega+\omega_{n})-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}.
 \end{equation}
 
 \end_inset
@@ -2192,25 +2219,27 @@ source
 \end_layout
 
 \begin_layout Standard
-where we have used 
-\begin_inset Formula $+$
-\end_inset
-
- signs in the propagator because the intermediate bosons travel backward
- in imaginary time.
- After the Matsubara sum, the source self-energy takes the form, 
+After the Matsubara sum, the source self-energy takes the form, 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Sigma_{s}^{\Upsilon}(i\omega,\bm{q}) & =-\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\bigg[\frac{1}{-i\omega+\omega_{\bm{k},\Upsilon_{1}}+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\frac{1}{e^{-\beta\omega_{\bm{k},\Upsilon_{1}}}-1}\\
- & +\frac{1}{-i\omega+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}+\omega_{\bm{k},\Upsilon_{1}}}\frac{1}{e^{\beta(i\omega+\omega_{\bm{q}-\bm{k},\Upsilon_{2}})}-1}
+\Sigma_{s}^{\Upsilon}(i\omega,\bm{q}) & =-\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\bigg[\frac{1}{-i\omega-\omega_{\bm{k},\Upsilon_{1}}-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\frac{1}{e^{\beta\omega_{\bm{k},\Upsilon_{1}}}-1}\\
+ & +\frac{1}{-i\omega-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}-\omega_{\bm{k},\Upsilon_{1}}}\frac{1}{e^{-\beta(i\omega+\omega_{\bm{q}-\bm{k},\Upsilon_{2}})}-1}\bigg]\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}\\
+ & \xrightarrow{\beta\rightarrow\infty}-\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\frac{\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}}{i\omega+\omega_{\bm{k},\Upsilon_{1}}+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\\
+ & \xrightarrow{\omega-i0^{+}\rightarrow i\omega}-\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\frac{\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}}{\omega+\omega_{\bm{k},\Upsilon_{1}}+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}-i0^{+}},
 \end{align}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+where we have used the analytic continuation for a advanced Green function
+ to guarantee the causality.
+ 
 \end_layout
 
 \begin_layout Standard
