@@ -23,6 +23,8 @@
 \lfoot{} 
 \rfoot{}
 \allowdisplaybreaks[2]
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,headheight=1cm,headsep=4cm,footskip=1cm}
 
 \newcommand{\iu}{{i\mkern1mu}}
 \newcommand{\one}{\mathbb{1}}
@@ -69,7 +71,7 @@
 \use_package undertilde 1
 \cite_engine natbib
 \cite_engine_type authoryear
-\biblio_style plain
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -2068,11 +2070,11 @@ In summary, the full cubic Hamiltonian can be symbolically written as
 
 \begin_layout Standard
 The cubic vertex functions 
-\begin_inset Formula $V_{1}$
+\begin_inset Formula $V_{s}$
 \end_inset
 
  and 
-\begin_inset Formula $V_{2}$
+\begin_inset Formula $V_{d}$
 \end_inset
 
  are ready for diagrammatic calculations.
@@ -2090,8 +2092,120 @@ The first diagram corresponds to an intermediate decay process, the analytic
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Sigma_{d}(i\omega,\bm{q}) & =\frac{1}{\beta N_{u}}\sum_{\omega_{n}}\sum_{\bm{k}}\frac{(-1)}{i\omega_{n}-\omega_{\bm{k}}}\frac{(-1)}{i(\omega-\omega_{n})-\omega_{\bm{q}-\bm{k}}}\\
- & =
+\Sigma_{d}^{\Upsilon}(i\omega,\bm{q}) & =\frac{1}{2\beta N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\sum_{\omega_{n}}\frac{(-1)}{i\omega_{n}-\omega_{\bm{k},\Upsilon_{1}}}\frac{(-1)}{i(\omega-\omega_{n})-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}.\label{eq:decay}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Matsubara sum over the frequencies 
+\begin_inset Formula $\omega_{n}$
+\end_inset
+
+ can be calculated by following the standard steps, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sum_{\omega_{n}}h(\omega_{n})=-\sum_{\alpha}\text{Res}\big[h(z\rightarrow i\omega_{n})g(z)\big]\big|_{z=z_{\alpha}},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $z_{\alpha}$
+\end_inset
+
+'s are poles of the function 
+\begin_inset Formula $h(z\rightarrow i\omega_{n})g(z)$
+\end_inset
+
+, and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+h(z)=\frac{1}{z-\omega_{\bm{k},\Upsilon_{1}}}\frac{1}{i\omega-z-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}},\ \ \ g(z)=\frac{\beta}{e^{\beta z}-1}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The decay self-energy diagram can therefore be written as, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Sigma_{d}^{\Upsilon}(i\omega,\bm{q}) & =-\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\bigg[\frac{1}{i\omega-\omega_{\bm{k},\Upsilon_{1}}-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\frac{1}{e^{\beta\omega_{\bm{k},\Upsilon_{1}}}-1}\\
+ & +\frac{1}{i\omega-\omega_{\bm{k},\Upsilon_{1}}-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\frac{1}{e^{\beta(i\omega-\omega_{\bm{q}-\bm{k},\Upsilon_{2}})}-1}\bigg]\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}\\
+ & \xrightarrow{\beta\rightarrow\infty}\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\frac{\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}}{i\omega-\omega_{\bm{k},\Upsilon_{1}}-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\\
+ & \xrightarrow{\omega+i0^{+}\rightarrow i\omega}\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\frac{\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2}}{\omega-\omega_{\bm{k},\Upsilon_{1}}-\omega_{\bm{q}-\bm{k},\Upsilon_{2}}+i0^{+}}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second diagram represents intermediate 
+\begin_inset Quotes eld
+\end_inset
+
+sink
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+source
+\begin_inset Quotes erd
+\end_inset
+
+ of spin wave excitations, which is written as, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Sigma_{s}^{\Upsilon}(i\omega,\bm{q})=\frac{1}{2\beta N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\sum_{\omega_{n}}\frac{1}{i\omega_{n}+\omega_{\bm{k},\Upsilon_{1}}}\frac{1}{-i(\omega+\omega_{n})+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\abs{V_{s}(\Upsilon_{1},\Upsilon_{2},\Upsilon;\bm{k},\bm{q}-\bm{k},\bm{q}}^{2},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we have used 
+\begin_inset Formula $+$
+\end_inset
+
+ signs in the propagator because the intermediate bosons travel backward
+ in imaginary time.
+ After the Matsubara sum, the source self-energy takes the form, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Sigma_{s}^{\Upsilon}(i\omega,\bm{q}) & =-\frac{1}{2N_{u}}\sum_{\Upsilon_{1},\Upsilon_{2}}\sum_{\bm{k}}\bigg[\frac{1}{-i\omega+\omega_{\bm{k},\Upsilon_{1}}+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}}\frac{1}{e^{-\beta\omega_{\bm{k},\Upsilon_{1}}}-1}\\
+ & +\frac{1}{-i\omega+\omega_{\bm{q}-\bm{k},\Upsilon_{2}}+\omega_{\bm{k},\Upsilon_{1}}}\frac{1}{e^{\beta(i\omega+\omega_{\bm{q}-\bm{k},\Upsilon_{2}})}-1}
 \end{align}
 
 \end_inset

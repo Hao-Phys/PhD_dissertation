@@ -3,3 +3,5 @@
 *.pyc
 *.lyx~
 *.lyx#
+
+.DS_Store
