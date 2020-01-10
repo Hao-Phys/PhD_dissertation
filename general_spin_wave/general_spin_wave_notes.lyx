@@ -2099,12 +2099,55 @@ The quartic Hamiltonian on a particular bond can be written as,
  & +(f_{\alpha,m}^{(1)}\big[f_{\beta,nn'}^{(3)}\big]^{*}b_{im}b_{jn'}^{\dagger}b_{jn}^{\dagger}b_{jn}+h.c.)\\
  & +(f_{\alpha,nn'}^{(3)}f_{\beta,m}^{(1)}b_{in}^{\dagger}b_{in}b_{in'}b_{jm}+h.c.)\\
  & +(f_{\alpha,nn'}^{(3)}\big[f_{\beta,m}^{(1)}\big]^{*}b_{in}^{\dagger}b_{in}b_{in'}b_{jm}^{\dagger}+h.c.)\big\}\\
- & +
+ & +2\sum_{m,m'=-1,0}\sum_{n.n'=-1,0}\big\{(f_{\alpha,mm'}^{(2)}f_{\beta,nn'}^{(2)}b_{im}^{\dagger}b_{im'}b_{jn}^{\dagger}b_{jn'}+h.c.).
 \end{align}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The on-site term does not contribute to the quartic Hamiltonian.
+ Consider a generic quartic term, the Wick theorem tells us that the vacuum
+ expectation of which consists of two-contraction terms, two-normal-ordered
+ terms, and one-contration-one-normal-ordered terms.
+ Terms of the first type correct the classical energy, while those of the
+ second type contribute the boson scattering vertex to the leading order.
+ As we discussed before, terms of the third type correspond to the Hartree-Fock
+ corrections of boson energies, which is the main focus of this manuscript.
+ 
+\end_layout
+
+\begin_layout Standard
+As a starting point, we define following mean-field quantities, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+N_{\Theta_{i}\Theta_{j}}^{mn} & \equiv\frac{1}{N_{u}}\sum_{\langle i,j\rangle}\langle b_{\Theta_{i},m}b_{\Theta_{j},n}^{\dagger}\rangle,\\
+\bar{N}_{\Theta_{i}\Theta_{j}}^{mn} & \equiv\frac{1}{N_{u}}\sum_{\langle i,j\rangle}\langle b_{\Theta_{i},m}^{\dagger}b_{\Theta_{j},n}\rangle,\\
+\Delta_{\Theta_{i}\Theta_{j}}^{mn} & \equiv\frac{1}{N_{u}}\sum_{\langle i,j\rangle}\langle b_{\Theta_{i},m}b_{\Theta_{j},n}\rangle,\\
+\bar{\Delta}_{\Theta_{i}\Theta_{j}}^{mn} & \equiv\frac{1}{N_{u}}\sum_{\langle i,j\rangle}\langle b_{\Theta_{i},m}^{\dagger}b_{\Theta_{j},n}^{\dagger}\rangle,
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Theta_{i,j}$
+\end_inset
+
+ are the sublattice indices and 
+\begin_inset Formula $m,n$
+\end_inset
+
+ are the flavor indices.
+ 
 \end_layout
 
 \begin_layout Subsection
